@@ -18,13 +18,13 @@ spec:
     command:
     - cat
     tty: true
-    volumeMounts:
-    - mountPath: /root/.m2/repository
-      name: m2
+#    volumeMounts:
+#    - mountPath: /root/.m2/repository
+#      name: m2
   volumes:
-    - name: m2
-      persistentVolumeClaim:
-        claimName: cache
+#    - name: m2
+#      persistentVolumeClaim:
+#        claimName: cache
     - name: jenkins-docker-cfg
       projected:
         sources:
